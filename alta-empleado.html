@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alta empleado</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+    <div class="row">
+            <header class="titulo-ventana col-12">Alta usuarios</header>
+    </div>
     
+    <div class="row">
+        <div class="col-4 p-5">
+            <div class="card">
+                <img src="img/foto-personal-default.png" class="card-img-top avatar p-1" alt="foto-personal">
+                <a href="#" class="btn btn-primary mt-4">Tomar foto</a>
+            </div>
+        </div>
+        <!-- Columna informacion personal -->
+        <div class="col-8">
+            <!-- Inicio filas nombres y apellidos -->
+            <div class="row">
+                <div class="col-4">
+                    <label for="nombre">Nombre(s)</label>
+                    <!-- <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre(s)"> -->
+                </div>
+                <div class="col-4">
+                    <label for="nombre">Primer apellido</label>
+                    <!-- <input type="text" class="form-control" id="apellido1" placeholder="Ingrese primer apellido"> -->
+                </div>
+                <div class="col-4">
+                    <label for="nombre">Segundo apellido</label>
+                    <!-- <input type="text" class="form-control" id="apellido1" placeholder="Ingrese segundo apellido"> -->
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-4 pl-1 pr-1">
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre(s)">
+                        </div>
+                        <div class="col-4 pl-1 pr-1">
+                            <input type="text" class="form-control" id="apellido1" placeholder="Ingrese primer apellido">
+                        </div>
+                        <div class="col-4 pl-1 pr-1">
+                            <input type="text" class="form-control" id="apellido1" placeholder="Ingrese segundo apellido">
+                        </div>
+            </div>
+            <!-- Fin filas nombres y apellidos -->
+            <form>
+                <div class="form-group">
+
+
+
+
+                    <label for="nombre">Segundo apellido</label>
+                    <input type="text" class="form-control" id="apellido1" placeholder="Ingrese segundo apellido">
+
+                    <label for="nombre">Fecha de nacimiento</label>
+                    <input type="text" class="form-control" id="apellido1"
+                        placeholder="Seleccione la fecha de nacimiento">
+
+                    <label for="nombre">NSS</label>
+                    <input type="text" class="form-control" id="apellido1"
+                        placeholder="Capture numero de seguro social">
+
+                    <label for="nombre">CURP</label>
+                    <input type="text" class="form-control" id="apellido1" placeholder="Capture CURP">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <!-- Fin columna informacion personal -->
+    </div>
 </body>
+
 </html>
