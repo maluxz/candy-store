@@ -2,8 +2,8 @@
     background-color: #039FD8;
     color: #312B2B;
     text-align: center;
-    font-weight: bolder;
-    font-size: 2em;
+    /* font-weight: bolder; */
+    font-size: 2.5em;
     padding: 0;
     margin: 0;
 }
@@ -11,4 +11,16 @@
 .avatar{
     border-radius: 50%;
     /* border: solid 1px rgb(156, 149, 149); */
+}
+
+@font-face {
+    font-family: 'Candy Shop';
+    src: url('../fonts/candy-shop/Candy\ Shop\ Personal\ Use.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+}
+
+.f-candy-shop {
+    font-family: 'Candy Shop';
 }
