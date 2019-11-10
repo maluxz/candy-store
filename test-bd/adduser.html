@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add user</title>
+</head>
+
+<body>
+    <!-- <form action="#" method="get"> -->
+    <input type="text" id="nombre">
+    <input type="text" id="apellido">
+    <input type="text" id="edad">
+    <input type="text" id="ciudad">
+    <input type="text" id="trabajo">
+    <button type="submit" onclick="addUser()">Registrar</button>
+    <!-- </form> -->
+        <p id="respuesta">aqui responde servidor</p>
+    <script>
+        function addUser() {
+            var nombre = document.getElementById("nombre");
+            var apellido = document.getElementById("apellido");
+            var edad = document.getElementById("edad");
+            var ciudad = document.getElementById("ciudad");
+            var trabajo = document.getElementById("trabajo");
+
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("respuesta").innerHTML = this.responseText;
+                    }
+                };
+            xmlhttp.open("GET", "adduser.php?nombre=" + nombre.value + "&apellido=" + apellido.value + "&edad=" + edad.value + "&ciudad=" + ciudad.value + "&trabajo=" + trabajo.value, true);
+            
+            xmlhttp.send();
+        }
+
+        
+
+    </script>
+</body>
+
+</html>
