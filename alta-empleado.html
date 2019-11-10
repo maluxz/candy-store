@@ -8,6 +8,15 @@
     <title>Alta empleado</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script>
+        $(function () {
+          $("#datepicker").datepicker();
+          $("#datepicker").datepicker( "setDate" , "1/1/2001" );
+        });
+      </script>
 </head>
 
 <body>
@@ -23,7 +32,7 @@
             </div>
         </div>
         <!-- Columna informacion personal -->
-        <div class="col-8">
+        <div class="col-8 pr-5">
             <!-- Inicio filas nombres y apellidos -->
             <div class="row">
                 <div class="col-6">
@@ -66,20 +75,20 @@
                 <div class="col-4">
                     <label for="nss">NSS</label>
                 </div>
-                
+
             </div>
             <div class="row">
                 <div class="col-2 pl-1 pr-1">
-                    <input type="text" class="form-control" id="nacimiento"
+                    <input type="text" class="form-control" id="datepicker"
                         placeholder="Seleccione fecha de nacimiento">
                 </div>
-                <div class="col-4 pl-1 pr-1">
+                <div class="col-2 pl-1 pr-1">
                     <input type="text" class="form-control" id="curp" placeholder="Capture CURP">
                 </div>
                 <div class="col-4 pl-1 pr-1">
                     <input type="text" class="form-control" id="nss" placeholder="Capture NSS">
                 </div>
-                <div class="col-2 pl-1 pr-1">
+                <div class="col-4 pl-1 pr-1">
                     <input type="text" class="form-control" id="celular" placeholder="Capture numero celular">
                 </div>
             </div>
