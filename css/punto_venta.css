@@ -1,8 +1,4 @@
-*{
-    margin:0px;
-    padding:0px;
-}
-    
+
 
 @font-face {
     font-family: 'Candy Shop';
@@ -95,5 +91,15 @@ ul{
     border-left: 5px solid black;
     border-bottom: 5px solid black;
     float: right;
+    position: absolute;
+    
+
+}
+
+/* div contenedor */
+#contenedor{
+    width: 1530px;
+    height: 600px;
+    background-color: hotpink;
 
 }
