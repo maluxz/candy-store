@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alta empleado</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+            $("#datepicker").datepicker("setDate", "1/1/2001");
+        });
+    </script>
+</head>
+
+<body>
+    <div class="row">
+        <header class="titulo-ventana col-12 f-candy-shop">Alta cliente</header>
+    </div>
+
+    <div class="row">
+        <div class="col-1" style="background-color: blue; height: 100%;">
+            <p>menu</p>
+        </div>
+        <!-- Columna informacion personal -->
+        <div class="col-11 pl-5 pr-5">
+            <!-- Inicio filas nombres y apellidos -->
+            <div class="row">
+                <div class="col-5">
+                    <label for="nombre">Nombre</label>
+                    <!-- <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre(s)"> -->
+                </div>
+                <div class="col-5">
+                    <label for="direccion">Direccion</label>
+                    <!-- <input type="text" class="form-control" id="apellido1" placeholder="Ingrese primer apellido"> -->
+                </div>
+                <div class="col-2">
+                    <label for="nombre">Codigo Postal</label>
+                    <!-- <input type="text" class="form-control" id="apellido1" placeholder="Ingrese segundo apellido"> -->
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-5 pl-1 pr-1">
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre">
+                </div>
+                <div class="col-5 pl-1 pr-1">
+                    <input type="text" class="form-control" id="apellido1" placeholder="Ingrese dirección">
+                </div>
+                <div class="col-2 pl-1 pr-1">
+                    <input type="text" class="form-control" id="apellido1" placeholder="Ingrese CP">
+                </div>
+            </div>
+            <!-- Fin filas nombres y apellidos -->
+            <div class="row">
+                <div class="col-2">
+                    <label for="fecha-nacimiento">RFC</label>
+                </div>
+                <div class="col-2">
+                    <label for="sexo">Giro</label>
+                </div>
+                <div class="col-4">
+
+                    <label for="curp">Telefono</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 pl-1 pr-1">
+                    <input type="text" class="form-control" id="datepicker"
+                        placeholder="Seleccione fecha de nacimiento">
+                </div>
+                <div class="col-2 pl-1 pr-1">
+                    <input type="text" class="form-control" id="curp" placeholder="Capture CURP">
+                </div>
+                <div class="col-4 pl-1 pr-1">
+                    <input type="text" class="form-control" id="nss" placeholder="Capture NSS">
+                </div>
+            </div>
+        </div>
+        <!-- Fin columna informacion personal -->
+    </div>
+</body>
+
+</html>
