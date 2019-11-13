@@ -1,5 +1,8 @@
 
-
+*{
+    margin:0px;
+    padding: 0px;
+}
 @font-face {
     font-family: 'Candy Shop';
     src: url('../fonts/candy-shop/Candy\ Shop\ Personal\ Use.ttf') format('truetype');
@@ -9,7 +12,7 @@
 }
 /* estilo cabecera */
 #header{
-    width: 1530px;
+    width: 1528px;
     height: 80px;
     background-color: #039FD8;
     color: #ad1e3f;
@@ -34,7 +37,7 @@
 }
 /* barra clientes/usuario */
 #opcion_cliente{
-    width: 1530px;
+    width: 1528px;
     height: 25px;
     background-color: #039FD8;
     font-size: 22px;
@@ -53,7 +56,13 @@
     margin-right: 1150px;
    
 }
+/* div contenedor */
+#contenedor{
+    width: 1528px;
+    height: 600px;
+    background-color: white;
 
+}
 /* productos-precio */
 #productos_precio{
     width: 950px;
@@ -62,6 +71,7 @@
     border-right: 5px solid black;
     border-left: 5px solid black;
     border-bottom: 5px solid black;
+    float: left;
 
 }
 .more{
@@ -82,24 +92,42 @@ ul{
     border-bottom: 5px solid black;
 
 }
-/* div en blanco */
-#blanco{
-    width: 100px;
-    height: 100px;
+/* div informacion del pago */
+#inf_pago{
+    margin-left: 960px;
+    width: 573px;
+    height: 600px;
     background-color: #bfc9ca ;
     border-right: 5px solid black;
-    border-left: 5px solid black;
+  
     border-bottom: 5px solid black;
-    float: right;
-    position: absolute;
+   
+   
+   
+    
     
 
 }
 
-/* div contenedor */
-#contenedor{
-    width: 1530px;
-    height: 600px;
-    background-color: hotpink;
+#tipo_pago{
+    margin: 20px;
+    font-size: 20px;
+}
+#txt_infpago{
+    margin: 20px;
+    font-size: 20px;
 
+}
+
+/* div para ingresar el codigo del producto */
+
+#cod_productos{
+    width:1528px;
+    height:96px ;
+    background-color: #bfc9ca ;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    margin-top: 5px;
+    font-size: 20px;
 }

@@ -35,11 +35,11 @@
     
     <!-- div contenedor (productos precio - blanco) -->
     <div id="contenedor">
-        <!-- productos/precio -->
+            <!-- productos/precio -->
     <div id="productos_precio">
             <ul>
     
-                    <li id="pp_articulo" >Articulo</li>
+                    <li id="pp_articulo" >Producto</li>
                     
                     <li class="more">Nombre</li>
                     
@@ -49,16 +49,33 @@
     
                     <li class="more">Descuento</li>
     
-                    
              </ul>
-        </div>
+        </div>     
         <!-- div en blanco -->
-        <div id="blanco">
-            frfgreg
-    
-        </div>
+            <div id="inf_pago">
+                <center>
+                        <label id="tipo_pago" for="tipo_pago" >Tipo Pago:</label>
+                        <select id="tipo_pago" name="tipo_pago">
+                                <option value="Efectivo">Efectivo</option>
+                                <option value="Tarjeta">Tarjeta</option>
+                         </select>
+                         <hr>
+                         <p id="txt_infpago">Cantidad de productos:</p>
+                         <hr>
+                         <p id="txt_infpago">TOTAL:</p>
 
-    </div>
+                </center>
+                   
+    
+            </div>
+       
+   </div>
+
+   <div id="cod_productos">
+        <label  for="cod_productos" >Ingrese el codigo del producto:</label>
+        <input type="text" name="cod_productos">
+
+   </div>
 </body>
 
 </html>
