@@ -16,7 +16,7 @@
     
     <div class="row">
         <div class="col-1" style="background-color: #039FD8"><img src="img/susi-girl.png" alt="Susi Girl" width="75px" height="75px"></div>
-        <header class="titulo-ventana col-11 f-candy-shop">Dulceria Susi</header>
+        <header class="titulo-ventana col-11 f-candy-shop" id="titulo-index">Dulceria Susi</header>
     </div>
     <div class="row">
         <!-- Menú -->
@@ -37,6 +37,25 @@
             var canva = document.getElementById('canva');
             canva.setAttribute('w3-include-html',pagina);
             includeHTML();
+
+            switch(pagina){
+                case 'alta-empleado.html':
+                    setTitle(' Alta empleado');
+                    break;
+                case 'alta-cliente.html':
+                    setTitle('Alta cliente');
+                    break
+                case 'alta_proveedor.html':
+                    setTitle('Alta proveedor');
+                    break;
+                default:break;
+            }
+            
+        }
+
+        function setTitle(titulo){
+            var title = document.getElementById('titulo-index');
+            title.innerHTML = titulo;
         }
 
         function includeHTML() {
