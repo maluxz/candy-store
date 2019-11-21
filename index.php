@@ -1,3 +1,15 @@
+<?php
+	require('test-login/conexion.php');
+	
+	session_start();
+	
+	if(!isset($_SESSION["id_usuario"])){
+		header("Location: login.php");
+    }
+
+    $nombreusuario = $_SESSION["nombre_usuario"];
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -16,7 +28,8 @@
     
     <div class="row">
         <div class="col-1" style="background-color: #039FD8"><img src="img/susi-girl.png" alt="Susi Girl" width="75px" height="75px"></div>
-        <header class="titulo-ventana col-11 f-candy-shop" id="titulo-index">Dulceria Susi</header>
+        <header class="titulo-ventana col-10 f-candy-shop" id="titulo-index">Dulceria Susi</header>
+        <p style="font-size: 20px;" class="col-1 titulo-ventana f-candy-shop"><?php echo $nombreusuario ?></p>
     </div>
     <div class="row">
         <!-- Menú -->
