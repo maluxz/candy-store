@@ -27,7 +27,7 @@
     <!-- Header -->
     
     <div class="row">
-        <div class="col-1" style="background-color: #039FD8"><img src="img/susi-girl.png" alt="Susi Girl" width="75px" height="75px"></div>
+        <div class="col-1" style="background-color: #039FD8"><img src="img/susi-girl.png" id="susi-girl" alt="Susi Girl" width="75px" height="75px"></div>
         <header class="titulo-ventana col-10 f-candy-shop" id="titulo-index">Dulceria Susi</header>
         <p style="font-size: 20px;" class="col-1 titulo-ventana f-candy-shop"><?php echo $nombreusuario ?></p>
     </div>
@@ -36,13 +36,15 @@
       
         <div id="menu" class="col-2" >
             <ul>
-                <li><a onclick="setW3('alta-empleado.html')">Home</a></li>
-                <li><a onclick="setW3('alta-cliente.html')">Alta empleado</a></li>
-                <li><a onclick="setW3('alta_proveedor.html')">Enlaces</a></li>
-                <li><a onclick="setW3('consulta-empleados.html')">Acerca de</a></li>
+                <li><a onclick="setW3('home.html')">Home</a></li>
+                <li><a onclick="setW3('alta-empleado.html')">Alta empleado</a></li>
+                <li><a onclick="setW3('alta_proveedor.html')">Alta proveedor</a></li>
+                <li><a onclick="setW3('consulta-empleados.html')">Consulta empleados</a></li>
+                <li><a onclick="setW3('alta-cliente.html')">Alta cliente</a></li>
+                <li><a href="punto_venta.html">Consulta empleados</a></li>
             </ul>
         </div>
-        <div id="canva" class="col-10" w3-include-html="alta-empleado.html"></div>
+        <div id="canva" class="col-9" w3-include-html="alta-empleado.html"></div>
     </div>
 
 
@@ -61,6 +63,12 @@
                     break
                 case 'alta_proveedor.html':
                     setTitle('Alta proveedor');
+                    break;
+                case 'home.html':
+                    setTitle('Dulceria susi');
+                    break;
+                case 'consulta-empleados.html':
+                    setTitle('Consulta empleados');
                     break;
                 default:break;
             }

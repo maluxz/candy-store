@@ -54,3 +54,7 @@
     border-left: 10px solid #333;
     color: #fff;
 }
+
+img {
+    background: transparent;
+  }
