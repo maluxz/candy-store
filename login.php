@@ -36,18 +36,15 @@
 <html>
 
 <head>
-
   <meta charset="UTF-8">
-
-  <title>CodePen - Login </title>
-
+  <title>Sistema Integral Dulceria Susi</title>
   <link rel="stylesheet" href="css/reset.css">
-
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+	<h1 class="titulo-ventana col-10 f-candy-shop" style="margin-top: 10px; color: black;">Sistema Integral Dulceria Susi</h1>
 	<center>
   <div class="wrap">
 		<div class="avatar">
