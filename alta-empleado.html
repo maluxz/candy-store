@@ -50,6 +50,7 @@
                 </div>
 
             </div>
+            <form method="POST" action="altaempleado.php">
             <div class="row">
                 <div class="col-6 pl-1 pr-1">
                     <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre(s)">
@@ -58,7 +59,7 @@
                     <input type="text" class="form-control" id="apellido1" placeholder="Ingrese primer apellido">
                 </div>
                 <div class="col-3 pl-1 pr-1">
-                    <input type="text" class="form-control" id="apellido1" placeholder="Ingrese segundo apellido">
+                    <input type="text" class="form-control" id="apellido2" placeholder="Ingrese segundo apellido">
                 </div>
             </div>
             <!-- Fin filas nombres y apellidos -->
@@ -92,8 +93,10 @@
                 <div class="col-4 pl-1 pr-1">
                     <input type="text" class="form-control" id="celular" placeholder="Capture numero celular">
                 </div>
+                <input type="submit" value="Enviar" >
             </div>
         </div>
+    </form>
         <!-- Fin columna informacion personal -->
     </div>
 </body>
