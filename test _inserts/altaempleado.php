@@ -11,13 +11,22 @@
         <?php
         if(isset($_POST['nombre'] )and $_POST['nombre']!=""){
             $nombre=$_POST['nombre'];
-            $epellido1=$_POST['apellido1'];
-            $apellido2=$_POST['apellido2'];
+            $a_paterno=$_POST['a_paterno'];
+            $a_materno=$_POST['a_materno'];
+            $fecha_nacimiento=$_POST['fecha_nacimiento'];
+            $sexo=$_POST['sexo'];
+            $curp=$_POST['curp'];
+            $nss=$_POST['nss'];
+            $rfc=$_POST['rfc'];
+            $fecha_ingreso=$_POST['fecha_ingreso'];
+            $idtipo_empleado=$_POST['tipo_empleado'];
 
 
-            $conexion=mysqli_connect('localhost','root','','inventario');
+
+
+            $conexion=mysqli_connect('localhost','root','','dulceria-susi');
             
-            $sql = "INSERT INTO empleados (nombre_producto,descripcion_producto, id_categori) VALUES ('$nombre', '$descripcion', '$idcateg')";
+            $sql = "INSERT INTO empleados (/* nombre de las columnas */) VALUES ('', '', '')";
             if (mysqli_query($conexion, $sql)) {
                 echo "Nuevo Empleado Registrado";
             } else {
@@ -30,7 +39,9 @@
             
         }
         
-        header("Location: mostrar_tabla.php"); 
+        
+       /*  header("Location: ");  */
+
         
         ?>
     </body>

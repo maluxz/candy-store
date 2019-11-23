@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario para registro de empleados</title>
+</head>
+<body>
+    <h1>Ingrese la informacion solicitada para el registro de un nuevo empleado</h1>
+    <hr>
+    <br>
+
+    <form method="POST" action="altaempleado.php">
+        <!--Nombre Usuario-->
+        <label for="nombre">Nombre:</label>
+        <br/>
+        <input type="text" name="nombre" maxlength="45" required>
+        <br/><br/>
+        <!-- Apellido Paterno -->
+        <label for="a_paterno">Apellido Paterno:</label>
+        <br/>
+        <input type="text" name="a_paterno" maxlength="45" required>
+        <br/><br/>
+        <!-- Apellido Materno -->
+        <label for="a_materno">Apellido Materno:</label>
+        <br/>
+        <input type="text" name="a_materno" maxlength="45" required>
+        <br/><br/>
+        <!-- Fecha de nacimiento -->
+        <label for="fecha_nacimiento">Fecha Nacimiento:</label>
+        <br/>
+        <input type="date" name="fecha_nacimiento" required>
+        <br/><br/>
+        <!-- Sexo -->
+        <input type="radio" name="sexo" value="male"> Male<br>
+        <input type="radio" name="sexo" value="female"> Female<br>
+        <!-- Curp -->
+        <label for="curp">CURP:</label>
+        <br/>
+        <input type="text" name="curp" maxlength="18" required>
+        <br/><br/>
+        <!-- NSS -->
+        <label for="nss">NSS:</label>
+        <br/>
+        <input type="text" name="nss" maxlength="11" required>
+        <br/><br/>
+        <!-- RFC -->
+        <label for="rfc">RFC:</label>
+        <br/>
+        <input type="text" name="rfc" maxlength="13" required>
+        <br/><br/>
+        <!-- Fecha de ingreso -->
+        <label for="fecha_ingreso">Fecha Ingreso:</label>
+        <br/>
+        <input type="date" name="fecha_ingreso" required>
+        <br/><br/>
+        <!-- Cargo -->
+        <label for="tipo_empleado">Cargo:</label>
+        <br/>
+        <select name="tipo_empleado">
+
+            <option value = 1>Tipo 1</option>
+                
+            <option value =2>Tipo 2</option>
+                
+            <option value =3>Tipo 3</option>
+
+        </select>
+        <br/><br/>
+
+        
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
