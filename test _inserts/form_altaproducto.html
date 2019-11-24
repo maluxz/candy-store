@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario para registro de producto</title>
+</head>
+<body>
+    <h1>Ingrese la informacion solicitada para el registro de un nuevo producto</h1>
+    <hr>
+    <br>
+    <form method="POST"  action="altaproducto.php" enctype="multipart/form-data" >
+    <!-- NOMBRE-->
+    <label for="nombre">Nombre:</label>
+    <br/>
+    <input type="text" name="nombre" maxlength="45" required>
+    <br/><br/>
+    <!-- IMAGEN -->
+    <label for="imagen">Imagen producto:</label>
+    <br/>
+    <input type="file" name="imagen" accept="image/png, .jpeg, .jpg, image/gif" required>
+    <br/><br/>
+    <!--Descripcion-->
+    <label for="descripcion">Descripcion:</label>
+    <br/>
+    <input type="text" name="descripcion" maxlength="100" required>
+    <br/><br/>
+    <!--Precio de compra-->
+    <label for="preciodecompra">Precio de compra:</label>
+    <br/>
+    <input type="text" name="preciodecompra" maxlength="45" required>
+    <br/><br/>
+    <!--Precio de venta-->
+    <label for="preciodeventa">Precio de venta:</label>
+    <br/>
+    <input type="text" name="preciodeventa" maxlength="45" required>
+    <br/><br/>
+    <!--Codigo de barras-->
+    <label for="codigodebarras">Codigo de barras:</label>
+    <br/>
+    <input type="text" name="codigodebarras" maxlength="15" required>
+    <br/><br/>
+    <!--stock caja -->
+    <label for="stockcaja">Stock Caja:</label>
+    <br/>
+    <input type="text" name="stockcaja" maxlength="45" required>
+    <br/><br/>
+    <!-- Cantidad de bolsas por caja -->
+    <label for="cantidadbolsasporcaja">Cantidad de bolsas por caja:</label>
+    <br/>
+    <input type="text" name="cantidadbolsasporcaja" maxlength="15" required>
+    <br/><br/>
+    <!-- Cantidad de gramos por bolsa -->
+    <label for="cantidadgramosporbolsa">Cantidad de gramos por bolsa:</label>
+    <br/>
+    <input type="text" name="cantidadgramosporbolsa" maxlength="15" required>
+    <br/><br>
+    <!-- Categoria -->
+    <label for="categoria">Cargo:</label>
+        <br/>
+        <select name="categoria">
+
+            <option value = 1>categoria 1</option>
+                
+            <option value =2>categoria 2</option>
+                
+            <option value =3>categoria 3</option>
+
+        </select>
+        <br/><br/>
+        <!-- boton registrar -->
+        <input type="submit" value="Registrar producto" >
+    
+
+
+
+
+    </form>
+</body>
+</html>
