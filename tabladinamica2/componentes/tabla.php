@@ -57,7 +57,6 @@ $conexion=conexion();
 			
 				<td> <?php echo $ver[0]?> </td>
 				<td><?php  echo $ver[1] ?></td>
-				
 			    <td><?php  echo $ver[3] ?></td>
 				<td><?php  echo $ver[4] ?></td>
 				<td><?php  echo $ver[5] ?></td>
@@ -69,8 +68,6 @@ $conexion=conexion();
 				<td><?php  echo $ver[11] ?></td>
 				<td><?php  echo $ver[12] ?></td>
 				<td><?php  echo $ver[13] ?></td>
-				<!-- <td></td>
-				<td></td> -->
 				<td>
 					<button class="btn btn-warning glyphicon glyphicon-pencil" data-toggle="modal" data-target="#modaledicion"
 					onclick="agregaform('<?php echo $datos; ?>')">
