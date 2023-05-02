@@ -1,2 +1,1 @@
-# dulceria-susi
-Sistema integral de Dulceria Susi
+# Sistema integral de Dulceria Susi
